@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shinsei Village</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      @font-face {
+        font-family: "Jamino";
+        src:
+          url("./jamino-display-font/jamino.woff2") format("woff2"),
+          url("./jamino-display-font/jamino.woff") format("woff"),
+          url("./jamino-display-font/jamino.otf") format("opentype"),
+          url("./jamino-display-font/jamino.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      .font-jamino {
+        font-family:
+          "Jamino",
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Apple Color Emoji",
+          "Segoe UI Emoji";
+        letter-spacing: 0.06em;
+      }
+    </style>
+  </head>
+  <body class="bg-[#1c1a22] text-white h-screen overflow-hidden">
+    <!-- NAVBAR -->
+    <header
+      class="absolute top-0 left-0 w-full z-50 px-8 py-4 flex justify-between items-center"
+    >
+      <div class="font-jamino text-lg">SHINSEI VILLAGE</div>
+
+      <nav class="hidden md:flex gap-8 text-sm text-gray-200 font-semibold">
+        <a href="#" class="hover:text-white">Vision</a>
+        <a href="#" class="hover:text-white">Collection</a>
+        <a href="#" class="hover:text-white">Roadmap</a>
+        <a href="#" class="hover:text-white">Team</a>
+        <a href="#" class="hover:text-white">Mint ↗</a>
+        <a href="#" class="hover:text-white">Wallet Checker ↗</a>
+      </nav>
+
+      <div class="flex gap-3">
+        <div class="w-8 h-8 bg-white rounded-full grid place-items-center">
+          <i class="ri-search-2-line text-gray-400 text-lg leading-none"></i>
+        </div>
+        <div class="w-8 h-8 bg-white rounded-full grid place-items-center">
+          <i
+            class="ri-arrow-right-up-line text-gray-400 text-lg leading-none"
+          ></i>
+        </div>
+        <div class="w-8 h-8 bg-white rounded-full grid place-items-center">
+          <i class="ri-discord-line text-gray-400 text-lg leading-none"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="h-screen flex flex-col">
+      <!-- HERO -->
+      <section
+        class="relative flex-[0_0_68vh] min-h-[520px] flex items-center justify-center text-center"
+      >
+        <!-- Background -->
+        <img
+          src="./image.png"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Shinsei Village scenic background"
+        />
+
+        <!-- Content -->
+        <div class="relative w-full px-4">
+          <!-- Text should sit behind the character -->
+          <div class="relative z-10">
+            <p class="text-sm tracking-widest mb-2 text-left ml-96">
+              Join the Mystic Adventure
+            </p>
+
+            <h1 class="font-jamino text-6xl w-full">SHINSEI VILLAGE</h1>
+
+            <p class="mt-2 text-right mr-96 tracking-widest">
+              Genuine Storytelling Project
+            </p>
+          </div>
+
+          <!-- Button should sit on top of the character -->
+          <button
+            class="relative z-30 mt-3 px-8 py-3 bg-[#F5CD63] text-black font-semibold rounded shadow-lg hover:scale-105 transition"
+          >
+            MINT NOW
+          </button>
+        </div>
+
+        <!-- Character (center overlay) -->
+        <img
+          src="./monkey.png"
+          class="absolute bottom-0 h-[80%] object-contain z-20"
+          alt="Shinsei Village character"
+        />
+
+        <!-- Curve bottom -->
+        <div class="absolute bottom-0 left-0 w-full z-30 pointer-events-none">
+          <svg
+            viewBox="0 0 1440 220"
+            class="block w-full h-[140px] md:h-[180px]"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <!-- wide eclipse/arc like the reference -->
+            <path
+              d="M0,160 C360,235 1080,235 1440,160 L1440,220 L0,220 Z"
+              fill="#1c1a22"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- VISION SECTION -->
+      <section
+        class="bg-[#1c1a22] flex-1 px-6 pb-8 text-center overflow-hidden mt-16"
+      >
+        <h2 class="font-jamino text-2xl mb-4">VISION</h2>
+
+        <!-- Divider -->
+        <div class="flex items-center justify-center mb-6">
+          <span class="rounded-full bg-yellow-400 h-1.5 w-1.5"></span>
+          <div class="h-[1px] w-96 bg-gray-600"></div>
+          <div class="w-3 h-3 bg-yellow-400 rotate-45 mx-4"></div>
+          <div class="h-[1px] w-96 bg-gray-600"></div>
+          <span class="rounded-full bg-yellow-400 h-1.5 w-1.5"></span>
+        </div>
+
+        <!-- Content -->
+        <div
+          class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-gray-300 text-sm leading-relaxed"
+        >
+          <p>
+            Shinsei Village is a collection featuring 1,200 demigod monkeys,
+            unraveling a mysterious case to save their village. The project is
+            not just a PFP collection, but a fascinating on-chain storyline.
+            Through a focus on community engagement, the project seeks to build
+            the new era of Web3 entertainment.
+          </p>
+
+          <p>
+            Each stage of development is aimed to deliver the adventure
+            experience to the community, as well as provides rewards and
+            benefits for all holders. Solve weekly puzzles to open mystic boxes
+            and collect $CLUE! Uncovering the plot is entirely up to the vote
+            and decisions of the community.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
